@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Box, Container, Tab, Tabs, Grid, Typography, Button } from "@material-ui/core"
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
+import skills from '../../assets/data/skills'
 import Image from 'next/image'
 
 function TabPanel({ children, value, index, }) {
@@ -15,7 +16,7 @@ function TabPanel({ children, value, index, }) {
   );
 }
 
-const Skills = ({ skills }) => {
+const Skills = () => {
   const [value, setValue] = useState(0);
   const handleChange = (event, newValue) => {
     setValue(newValue);

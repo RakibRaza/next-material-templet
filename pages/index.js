@@ -10,16 +10,15 @@ import Pricing from '../components/Pricing/Pricing';
 import Contact from '../components/Contact/Contact';
 
 import reviews from '../assets/data/review'
-import skills from '../assets/data/skills'
 import pricing from '../assets/data/pricing'
 
-export default function Home({ reviews, skills, pricing }) {
+export default function Home({ reviews, pricing }) {
   return (
     <>
       <Header />
       <Service />
       <Process />
-      <Skills skills={skills} />
+      <Skills />
       <Business />
       <About />
       <Review reviews={reviews} />
@@ -32,6 +31,6 @@ export default function Home({ reviews, skills, pricing }) {
 
 export async function getStaticProps() {
   return {
-    props: { reviews, skills, pricing },
+    props: { reviews, pricing },
   }
 }
