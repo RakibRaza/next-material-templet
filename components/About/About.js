@@ -1,4 +1,5 @@
 import { Box, Button, Container, Grid, Typography } from "@material-ui/core"
+import Image from 'next/image'
 import sideImg from '../../assets/images/1.svg'
 
 const About = () => {
@@ -13,7 +14,7 @@ const About = () => {
             <Button sx={{ mt: 4 }} variant='contained' color='secondary'>Try it free</Button>
           </Grid>
           <Grid item xs={12} sm={12} md={5}>
-            <img src={sideImg.src} alt="Women with book" />
+            <Image src={sideImg} alt="Women with book" />
           </Grid>
         </Grid>
       </Container>

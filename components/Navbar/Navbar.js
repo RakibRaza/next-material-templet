@@ -4,7 +4,7 @@ import logo from '../../assets/images/react-logo.svg'
 import FlightTakeoffIcon from '@material-ui/icons/FlightTakeoff';
 import MenuIcon from '@material-ui/icons/Menu';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
-
+import Image from 'next/image'
 function ElevationScroll({ children }) {
   const trigger = useScrollTrigger({
     disableHysteresis: true,
@@ -26,7 +26,7 @@ const Navbar = () => {
               <Toolbar>
                 <Box sx={{ flexGrow: 1 }}>
                   <Stack direction='row' spacing={8} >
-                    <img src={logo.src} alt="react logo" />
+                    <Image src={logo} alt="react logo" />
                     <Box>
                       <Button>Home</Button>
                       <Button>Service</Button>

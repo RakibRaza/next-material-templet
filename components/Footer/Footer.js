@@ -2,16 +2,14 @@ import { Box, Button, Container, Grid, Stack, Typography } from "@material-ui/co
 import MailIcon from '@material-ui/icons/Mail';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import styled from "@emotion/styled";
+import Image from 'next/image'
 
 const Hr = styled('div')(({ theme }) => ({
   backgroundColor: theme.palette.secondary.main,
   width: 70,
   height: 3
 }))
-const Img = styled('img')({
-  width: 24,
-  height: 24
-})
+
 const Footer = () => {
   return (
     <Box py={6} sx={{ backgroundColor: 'grey.900', color: '#fff' }}>
@@ -46,11 +44,14 @@ const Footer = () => {
             <Typography sx={{ fontWeight: 'bold' }} variant='h6'>Disclaimer</Typography>
             <Hr />
             <Typography sx={{ my: 3 }}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis perferendis rem, aut aliquam neque nam?</Typography>
-            <Stack direction='row' spacing={2}>
-              <Img src="/social-linkedin.png" alt="facebook" />
-              <Img src="/social-twitter.png" alt="facebook" />
-              <Img src="/social-facebook.png" alt="facebook" />
-            </Stack>
+            <Image src="/social-linkedin.png" alt="facebook" width={24}
+              height={24} />
+            <Box component='span' sx={{ mx: 2 }} >
+              <Image src="/social-twitter.png" alt="facebook" width={24}
+                height={24} />
+            </Box>
+            <Image src="/social-facebook.png" alt="facebook" width={24}
+              height={24} />
           </Grid>
         </Grid>
       </Container>

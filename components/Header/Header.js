@@ -1,6 +1,7 @@
 import { Box, Button, Container, Grid, InputAdornment, TextField, Typography, Stack } from "@material-ui/core"
 import FlightTakeoffIcon from '@material-ui/icons/FlightTakeoff';
 import sideImg from '../../assets/images/2.svg'
+import Image from 'next/image'
 import CheckIcon from '@material-ui/icons/Check';
 
 const Header = () => {
@@ -28,7 +29,7 @@ const Header = () => {
             }} />
           </Grid>
           <Grid item md={5}>
-            <img src={sideImg.src} alt="Women with book" />
+            <Image src={sideImg} alt="Women with book" />
           </Grid>
         </Grid>
       </Container>
