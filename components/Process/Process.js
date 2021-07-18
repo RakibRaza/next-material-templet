@@ -9,7 +9,7 @@ const Process = () => {
       <Container>
         <SectionHeader title='Integrate Your Process' subTitle='Access integrations and new features in a matter of seconds' />
         <Grid container spacing={4}>
-          {process.map(({ id, title, desc, icon }) => <Grid key={id} item md={6}>
+          {process.map(({ id, title, desc, icon }) => <Grid key={id} item xs={12} md={6}>
             <Card>
               <Typography variant='h5'>{title}</Typography>
               <Typography color='GrayText'>{desc}</Typography>

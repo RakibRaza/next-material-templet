@@ -7,6 +7,9 @@ export const Card = styled(Paper)(({ theme }) => ({
   position: 'relative',
   overflow: 'hidden',
   padding: theme.spacing(4, 15),
+  '@media (max-width: 768px )': {
+    padding: theme.spacing(4),
+  },
   '& h5': {
     fontWeight: 'bold',
     marginBottom: theme.spacing(1)
